@@ -33,7 +33,7 @@ def exclusive_scan(arr):
         scan[i] = s
     return scan
 
-def create_timearray(durations, arr, delimeter, timestep=0.001):
+def create_timearray(arr, durations, delimeter, timestep=0.001):
     durations = np.trunc(durations/timestep).astype(np.int32)
     total_time = sum(durations)
     start_times = exclusive_scan(durations)
@@ -125,10 +125,10 @@ def plot_bar_overlap(arr1, arr2, delimeter=None, ylabel='', xlabel='', label1=''
     plt.ylabel(ylabel, fontsize=20)
 
     if delimeter:
-        plt.axvline(x=delimeter, color='r', linestyle='--')
+        plt.axvline(x=delimeter, color='g', linestyle='--')
         
-    ax.bar(list(range(len(arr1))), height=arr1, width=0.8, color='b', label=label1)
-    ax.bar(list(range(len(arr2))), height=arr2, width=0.5, color='r', label=label2, alpha=0.5)
+    ax.bar(list(range(len(arr1))), height=arr1, width=1, color='b', label=label1)
+    ax.bar(list(range(len(arr2))), height=arr2, width=1, color='r', label=label2, alpha=0.5)
     plt.legend()
 
 def separate_streams(df, metric, delimeter):
