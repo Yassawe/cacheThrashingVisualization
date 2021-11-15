@@ -11,14 +11,15 @@ def plot_graph(arr, delimeter, ylabel='', xlabel=''):
     plt.axvline(x=delimeter, color='r', linestyle='--')
     ax.plot(arr)
 
-def plot_bar(arr, delimeter, ylabel='', xlabel=''):
+def plot_bar(arr, delimeter=None, ylabel='', xlabel='', width=1):
     fig = plt.figure(figsize=(20,8))
     ax = fig.add_subplot(111)
     plt.tight_layout()
     plt.xlabel(xlabel, fontsize=20)
     plt.ylabel(ylabel, fontsize=20)
-    plt.axvline(x=delimeter, color='r', linestyle='--')
-    ax.bar(list(range(len(arr))), height=arr, width=1)
+    if delimeter:
+        plt.axvline(x=delimeter, color='r', linestyle='--')
+    ax.bar(list(range(len(arr))), height=arr, width=width)
 
 def find_delimeter(df):
     a = df.loc[df['Name'].str.contains('nll_loss_forward', case=False)]
