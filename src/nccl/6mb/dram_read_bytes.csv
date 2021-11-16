@@ -1,0 +1,22 @@
+"Device","Context","Stream","Kernel","Correlation_ID","dram_read_bytes"
+,,,,,
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",76,9998400
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",77,9434624
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",78,9334240
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",79,9397184
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",80,9394272
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",81,9359008
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",82,9366048
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",83,9579808
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",84,9490080
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",85,9352352
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",86,9215072
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",87,9398432
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",88,9351584
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",89,9518048
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",90,9443168
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",91,9411872
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",92,9451808
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",93,9537696
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",94,9610912
+"Tesla V100-DGXS-32GB (0)","1","16","ncclKernel_AllReduce_RING_LL_Sum_float(ncclWorkElem)",95,9576416

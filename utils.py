@@ -118,19 +118,22 @@ def create_timearray_separate_streams(df, metric, delimeter, timestep=0.001):
 
     return tvals_comp, tvals_comm, new_delimeter
 
-def plot_bar_overlap(arr1, arr2, delimeter=None, ylabel='', xlabel='', label1='', label2=''):
+def plot_bar_overlap(arr1, arr2, delimeter=None, ylabel='', xlabel='', label1='', label2='', width1=1, width2=1, title=''):
     fig = plt.figure(figsize=(20,8))
     ax = fig.add_subplot(111)
+
     plt.tight_layout()
+    plt.title(title, fontsize=20)
     plt.xlabel(xlabel, fontsize=20)
     plt.ylabel(ylabel, fontsize=20)
 
     if delimeter:
         plt.axvline(x=delimeter, color='g', linestyle='--')
         
-    ax.bar(list(range(len(arr1))), height=arr1, width=1, color='b', label=label1)
-    ax.bar(list(range(len(arr2))), height=arr2, width=1, color='r', label=label2, alpha=0.5)
+    ax.bar(list(range(len(arr1))), height=arr1, width=width1, color='b', label=label1)
+    ax.bar(list(range(len(arr2))), height=arr2, width=width2, color='r', label=label2, alpha=0.5)
     plt.legend()
+    plt.show()
 
 def separate_streams(df, metric, delimeter):
     #communication stream
