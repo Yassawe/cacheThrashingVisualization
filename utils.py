@@ -22,7 +22,7 @@ def plot_bar(arr, delimeter=None, ylabel='', xlabel='', width=1):
     ax.bar(list(range(len(arr))), height=arr, width=width)
 
 def find_delimeter(df):
-    a = df.loc[df['Name'].str.contains('nll_loss_forward', case=False)]
+    a = df.loc[df['Kernel'].str.contains('nll_loss_forward', case=False)]
     return a.index.to_numpy()[0]+1
 
 def exclusive_scan(arr):
@@ -137,7 +137,7 @@ def plot_bar_overlap(arr1, arr2, delimeter=None, ylabel='', xlabel='', label1=''
 
 def separate_streams(df, metric, delimeter):
     #communication stream
-    df_comm = df.loc[df['Name'].str.contains('nccl', case=False)]
+    df_comm = df.loc[df['Kernel'].str.contains('nccl', case=False)]
     vals_comm = df_comm[metric].astype(float).to_numpy()
     idx_comm = df_comm.index.to_numpy()
     ##__
